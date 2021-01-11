@@ -18,7 +18,7 @@ $ npm run start:prod
 ```
 
 ## Description
-When you start app, it runs on localhost and cache all data from images API immediately after launch, 
+When you start app, it run's on localhost and cache all data from images API immediately after launch, 
 and after that it caches data and refresh token every 15 minutes.
 You can get data from data or cache by specific endpoints.
 To run the app you need only to run npm run start or npm run start:dev to run it in watch mode.
