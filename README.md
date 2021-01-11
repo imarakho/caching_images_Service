@@ -21,6 +21,7 @@ $ npm run start:prod
 When you start app, Service cache all data from images API, 
 and after that it caches data and refresh token every 15 minutes.
 You can get data from data or cache by specific endpoints.
+To run the app you need only to run npm run start or npm run start:dev to run it in watch mode.
 
 # endpoints
 ```
