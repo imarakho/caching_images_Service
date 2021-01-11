@@ -41,15 +41,3 @@ API_KEY - api key for which allows us to get authentication token.
 API_URL - Api images URl.
 CACHE_EXPIRATION_TIME_IN_MINITES - time in minutes to store all images in cache.
 ```
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
