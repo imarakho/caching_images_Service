@@ -24,6 +24,7 @@ You can get data from data or cache by specific endpoints.
 
 # endpoints
 1.Get fisrt paginated page with images: GET /images.
+```
 2.Get specific paginated page with images: GET /images?page=2.
 3.Get details about specific images: GET /images/${id}.
 4.Get array of images by searchTerm: GET /images/${searchTerm}.
