@@ -1,4 +1,4 @@
-import { IShortInfoImage } from "./IShortInfoImage";
+import { IShortInfoImage } from './IShortInfoImage';
 
 export interface IPaginatedPage {
   pictures: IShortInfoImage[];

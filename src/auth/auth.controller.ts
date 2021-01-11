@@ -1,13 +1,18 @@
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Logger, Post } from '@nestjs/common';
 import { AuthService } from './auth.service';
-
+import { IBodyWithApiKey } from './interfaces/IBodyWithApiKey';
 
 @Controller('auth')
 export class AuthController {
-  constructor(private readonly authService: AuthService) { }
+  private readonly logger = new Logger();
+
+  constructor(private readonly authService: AuthService) {}
 
   @Post()
-  async getToken(@Body() apiKey: any): Promise<string> {
+  async getToken(@Body() body: IBodyWithApiKey): Promise<string> {
+    const { apiKey } = body;
+
+    this.logger.log(`GET token by apiKey ${apiKey}`);
     return await this.authService.getToken(apiKey);
   }
 }

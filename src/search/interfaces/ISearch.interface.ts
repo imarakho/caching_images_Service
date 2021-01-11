@@ -1,6 +1,5 @@
-import { IImage } from "src/images/interfaces/IImage";
-import { ISearchTerm } from "./ISearchTerm";
+import { IImage } from 'src/images/interfaces/IImage';
 
-export interface ISearchIntrface {
-  getImagesBySearchParams(params: ISearchTerm): Promise<IImage[]>;
+export interface ISearchInterface {
+  getImagesBySearchParams(searchTerm: string): Promise<IImage[]>;
 }

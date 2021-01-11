@@ -1,5 +1,5 @@
 import { HttpModule, CacheModule, Module } from '@nestjs/common';
-import { AuthModule } from 'src/auth/auth.module';
+import { ConfigService } from '@nestjs/config';
 import { AuthService } from 'src/auth/auth.service';
 import { ImagesController } from './images.controller';
 import { ImagesService } from './images.service';
@@ -13,6 +13,6 @@ import { ImagesService } from './images.service';
     }),
   ],
   controllers: [ImagesController],
-  providers: [ImagesService, AuthService],
+  providers: [ImagesService, AuthService, ConfigService],
 })
 export class ImagesModule {}
