@@ -18,7 +18,7 @@ $ npm run start:prod
 ```
 
 ## Description
-When you start app, Service cache all data from images API, 
+When you start app, it runs on localhost and cache all data from images API immediately after launch, 
 and after that it caches data and refresh token every 15 minutes.
 You can get data from data or cache by specific endpoints.
 To run the app you need only to run npm run start or npm run start:dev to run it in watch mode.
@@ -31,6 +31,15 @@ To run the app you need only to run npm run start or npm run start:dev to run it
 4.Get array of images by searchTerm: GET /images/${searchTerm}.
 4.1.This endpoint get's data from cache by searchTerm and looking for coincidences
 in tags, camera and author fields.
+```
+
+### environment
+.env:
+```
+PORT - specifies on which port app will run.
+API_KEY - api key for which allows us to get authentication token.
+API_URL - Api images URl.
+CACHE_EXPIRATION_TIME_IN_MINITES - time in minutes to store all images in cache.
 ```
 ## Test
 
