@@ -23,7 +23,7 @@ and after that it caches data and refresh token every 15 minutes.
 You can get data from data or cache by specific endpoints.
 To run the app you need only to run npm run start or npm run start:dev to run it in watch mode.
 
-# endpoints
+### endpoints
 ```
 1.Get fisrt paginated page with images: GET /images.
 2.Get specific paginated page with images: GET /images?page=2.
